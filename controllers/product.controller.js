@@ -61,7 +61,7 @@ exports.newProduct= async(req,res)=>{
     const newProducto = new Product({code,productName,description,image,category,priceUnit,stock,enterprise}) 
      
     try {
-        await newbook.save(); 
+        await newProducto.save(); 
         return res.status(200).json(
             { 
                 message: "Creacion correcta del producto",
@@ -120,7 +120,7 @@ exports.updateProduct = async(req,res)=>{
 exports.deleteProduct = async(req,res)=>{
     try {
         const code = req.params.code
-        const deletedProducto = await Book.findByAndDelete({code:code})
+        const deletedProducto = await Product.findOneAndDelete({code:code})
         if(!deletedProducto){
             return res.status(404).json(
                 {
