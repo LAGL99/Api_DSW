@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const booksRoutes = require('./routers/books-routers')
+const productRoutes = require('./routers/product.routers')
 const UserRoutes = require('./routers/users.routers')
 const mongoConect = require('./utils/mongoConnection')
 //const coorse = require ('cors');
@@ -13,7 +13,7 @@ app.listen(PORT,()=>{
 
 app.use(express.json());
 //app.use(corse);
-app.use("/books", booksRoutes)
+app.use("/products", productRoutes)
 app.use("/users", UserRoutes)
 
 app.get("/status", (request,response)=>{
