@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const productRoutes = require('./routers/product.routers')
+const shoppingRoutes = require('./routers/shoppingcart.routers')
 const UserRoutes = require('./routers/users.routers')
 const mongoConect = require('./utils/mongoConnection')
 //const coorse = require ('cors');
@@ -14,6 +15,7 @@ app.listen(PORT,()=>{
 app.use(express.json());
 //app.use(corse);
 app.use("/products", productRoutes)
+app.use("/shopping", shoppingRoutes)
 app.use("/users", UserRoutes)
 
 app.get("/status", (request,response)=>{

@@ -3,10 +3,10 @@ const shoppingCartSchema = new mongoose.Schema({
 
     //Esquema de productos para la tienda
     userId: {type: String, required:true},
-    code: {type: String, required:true, unique:true},
+    code: {type: String, required:true},
     productName: {type: String, required : true},
     image: {type: String, default: null},
-    category: {type: String, required:true},
+    category: {type: String, default:null},
     priceUnit: {type: String, default: null},
     quantity: {type: Number, default: 1},
     shop:{type:Boolean, default: false},
