@@ -1,0 +1,18 @@
+Cómo ejecutar la API
+- Clonar el repositorio
+git clone https://github.com/LAGL99/Api_DSW
+
+- Dirigirnos a la carpeta donde se almaceno la Api
+cd Api_DSW
+
+- Instalar las dependencias
+npm install
+
+- Ejecutar el servicio
+npm run dev
+
+- Integrantes
+21400702_Hernandez_Samaniega_OscarGabriel
+21400701_Hernandez_Ortiz_Luis_Eduardo_Antonio
+21400645_Arellano_Garcia_Alessandro_Javier
+19400576_Gomez_Lopez_Luis_Antonio
