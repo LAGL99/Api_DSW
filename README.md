@@ -31,6 +31,9 @@ https://api-dsw.vercel.app
 
 ---
 
+**Link de el video**
+https://drive.google.com/file/d/1Sm4FRRo2C_hoI40J2e1eRSwfC2VYPSoy/view?usp=sharing
+
 ## 👥 Integrantes
 
 - **21400702** — Hernandez Samaniega Oscar Gabriel  
