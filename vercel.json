@@ -3,7 +3,7 @@
   "name": "DSW_API",
   "builds": [
     {
-      "src": "./index.js",
+      "src": "index.js",
       "use": "@vercel/node"
     }
   ],

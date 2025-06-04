@@ -9,11 +9,11 @@ const cors = require('cors');
 
 
 const PORT = process.env.PORT|| 3001;
-
+/*
 app.listen(PORT,()=>{
     console.log("Server listening on PORT: ",PORT);
 });
-
+*/
 app.use(express.json({ limit: '50mb' }));
 app.use(cors());
 app.use("/products", productRoutes)
@@ -28,3 +28,4 @@ app.get("/", (request,response)=>{
 });
 
 
+module.exports = app;
